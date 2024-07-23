@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color:crimson;
+}
+
+.hearts {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Добавлено расстояние между кружками */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ff6b81;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s ease; /* Увеличено время перехода */
+}
+
+#no-heart {
+    background: #ff4757;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff6b81; /* Розовый цвет */
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .heart {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+}
